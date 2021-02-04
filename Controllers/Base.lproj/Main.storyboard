@@ -1,0 +1,945 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Soleil W01 Regular.ttf">
+            <string>SoleilW01-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="Login_VC" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miner_Faded Icon" translatesAutoresizingMaskIntoConstraints="NO" id="NZW-5r-EHK">
+                                <rect key="frame" x="64" y="44" width="246" height="273"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NZW-5r-EHK" secondAttribute="height" multiplier="8:9" constant="3.4444444444444571" id="Bhi-Kg-bBF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCz-td-ZMT">
+                                <rect key="frame" x="97" y="303" width="195" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jCz-td-ZMT" secondAttribute="height" multiplier="125:54" id="Utp-3r-hLN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="38"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SignIn TextView Icon" translatesAutoresizingMaskIntoConstraints="NO" id="gAQ-Hh-QI9">
+                                <rect key="frame" x="32" y="400.33333333333331" width="325" height="55.666666666666686"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gAQ-Hh-QI9" secondAttribute="height" multiplier="310:53" id="Hm6-KO-P3d"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Password TexView Icon" translatesAutoresizingMaskIntoConstraints="NO" id="rf3-ng-B8p">
+                                <rect key="frame" x="32" y="472" width="325" height="73.333333333333371"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rf3-ng-B8p" secondAttribute="height" multiplier="31:7" id="SDG-9s-tVc"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Man Icon" translatesAutoresizingMaskIntoConstraints="NO" id="iHw-2T-Tcv">
+                                <rect key="frame" x="47" y="411.33333333333331" width="33" height="33.666666666666686"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iHw-2T-Tcv" secondAttribute="height" multiplier="26:25" constant="-1.8399999999999999" id="7jE-5M-0Vn"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sb8-mE-og1">
+                                <rect key="frame" x="87.666666666666671" y="405" width="252.33333333333331" height="46"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Key Icon" translatesAutoresizingMaskIntoConstraints="NO" id="q3y-d1-0ke">
+                                <rect key="frame" x="47" y="491.66666666666669" width="33" height="34.000000000000057"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q3y-d1-0ke" secondAttribute="height" multiplier="32:33" id="pZq-dh-sGz"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBw-Ac-2cY">
+                                <rect key="frame" x="87.666666666666671" y="490.66666666666669" width="210.66666666666663" height="36.000000000000057"/>
+                                <color key="backgroundColor" red="0.14009499550000001" green="0.15239626170000001" blue="0.20801699160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyeball Icon" translatesAutoresizingMaskIntoConstraints="NO" id="q8x-Z0-qBI">
+                                <rect key="frame" x="308" y="492" width="32" height="33.333333333333371"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="q8x-Z0-qBI" secondAttribute="height" multiplier="32:33" id="bDr-QM-xcG"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPO-vP-MJq">
+                                <rect key="frame" x="89" y="534" width="196" height="104"/>
+                                <state key="normal" image="Large Green Rounded Button Icon"/>
+                                <connections>
+                                    <action selector="performSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6E-R9-hFz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvt-9g-mFs">
+                                <rect key="frame" x="161.66666666666666" y="571.33333333333337" width="61.666666666666657" height="29.333333333333371"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVc-sJ-QWT">
+                                <rect key="frame" x="115" y="715" width="160" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="00z-hn-X1i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="19"/>
+                                <state key="normal" title="Forgot Password"/>
+                                <connections>
+                                    <action selector="forgotPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXZ-Ok-aD3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NZW-5r-EHK" secondAttribute="trailing" constant="80" id="0F7-RG-qTk"/>
+                            <constraint firstItem="NZW-5r-EHK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="108-al-TEi"/>
+                            <constraint firstItem="q3y-d1-0ke" firstAttribute="centerX" secondItem="iHw-2T-Tcv" secondAttribute="centerX" id="2NU-sq-AG5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MVc-sJ-QWT" secondAttribute="bottom" constant="56" id="3t1-DT-6CJ"/>
+                            <constraint firstItem="q8x-Z0-qBI" firstAttribute="leading" secondItem="KBw-Ac-2cY" secondAttribute="trailing" constant="9.5" id="4TV-Hn-a0a"/>
+                            <constraint firstItem="q3y-d1-0ke" firstAttribute="centerY" secondItem="KBw-Ac-2cY" secondAttribute="centerY" id="77h-Eu-oAh"/>
+                            <constraint firstItem="NZW-5r-EHK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7Vo-08-wqQ"/>
+                            <constraint firstItem="gPO-vP-MJq" firstAttribute="centerY" secondItem="dvt-9g-mFs" secondAttribute="centerY" id="85M-sx-klJ"/>
+                            <constraint firstItem="rf3-ng-B8p" firstAttribute="top" secondItem="Sb8-mE-og1" secondAttribute="bottom" constant="21" id="9gX-Xj-OK5"/>
+                            <constraint firstItem="rf3-ng-B8p" firstAttribute="top" secondItem="gAQ-Hh-QI9" secondAttribute="bottom" constant="16" id="BfZ-rJ-zur"/>
+                            <constraint firstItem="jCz-td-ZMT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="BpR-eD-lGh"/>
+                            <constraint firstItem="gAQ-Hh-QI9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="CCv-6c-K3n"/>
+                            <constraint firstItem="q8x-Z0-qBI" firstAttribute="width" secondItem="q8x-Z0-qBI" secondAttribute="height" multiplier="32:33" id="D28-Ot-Lf8"/>
+                            <constraint firstItem="gPO-vP-MJq" firstAttribute="centerX" secondItem="NZW-5r-EHK" secondAttribute="centerX" id="Dtk-Zp-7iX"/>
+                            <constraint firstItem="dvt-9g-mFs" firstAttribute="centerX" secondItem="rf3-ng-B8p" secondAttribute="centerX" constant="-2" id="E8j-fM-Ns8"/>
+                            <constraint firstItem="gAQ-Hh-QI9" firstAttribute="top" secondItem="jCz-td-ZMT" secondAttribute="bottom" constant="13.33" id="ErB-nb-0ek"/>
+                            <constraint firstItem="q3y-d1-0ke" firstAttribute="leading" secondItem="iHw-2T-Tcv" secondAttribute="leading" id="FYZ-9w-6Hb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Sb8-mE-og1" secondAttribute="trailing" constant="50" id="HKm-mO-MNJ"/>
+                            <constraint firstItem="rf3-ng-B8p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="KtI-Fe-YSC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rf3-ng-B8p" secondAttribute="trailing" constant="33" id="Lwv-Jg-IPI"/>
+                            <constraint firstItem="q3y-d1-0ke" firstAttribute="bottom" secondItem="KBw-Ac-2cY" secondAttribute="bottom" constant="-1" id="ML6-gv-ryS"/>
+                            <constraint firstItem="q3y-d1-0ke" firstAttribute="centerY" secondItem="rf3-ng-B8p" secondAttribute="centerY" id="Nbs-pr-M3O"/>
+                            <constraint firstItem="KBw-Ac-2cY" firstAttribute="leading" secondItem="Sb8-mE-og1" secondAttribute="leading" id="Nc8-7t-b7n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MVc-sJ-QWT" secondAttribute="trailing" constant="115" id="OLr-T9-Gn1"/>
+                            <constraint firstItem="KBw-Ac-2cY" firstAttribute="top" secondItem="q8x-Z0-qBI" secondAttribute="top" constant="-1.5" id="PCK-GH-cw2"/>
+                            <constraint firstItem="KBw-Ac-2cY" firstAttribute="centerY" secondItem="q8x-Z0-qBI" secondAttribute="centerY" id="RFG-Xx-Fsh"/>
+                            <constraint firstItem="Sb8-mE-og1" firstAttribute="top" secondItem="jCz-td-ZMT" secondAttribute="bottom" constant="18" id="Rzj-IO-0DG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gAQ-Hh-QI9" secondAttribute="trailing" constant="33" id="Sbh-KX-ft1"/>
+                            <constraint firstItem="rf3-ng-B8p" firstAttribute="top" secondItem="gAQ-Hh-QI9" secondAttribute="bottom" constant="16" id="Wog-WS-h2Q"/>
+                            <constraint firstItem="gPO-vP-MJq" firstAttribute="top" secondItem="KBw-Ac-2cY" secondAttribute="bottom" constant="7.3333333333333144" id="XNd-nc-fOv"/>
+                            <constraint firstItem="rf3-ng-B8p" firstAttribute="top" secondItem="iHw-2T-Tcv" secondAttribute="bottom" constant="27" id="aYR-Dd-MKV"/>
+                            <constraint firstItem="jCz-td-ZMT" firstAttribute="top" secondItem="NZW-5r-EHK" secondAttribute="bottom" constant="-14" id="bgL-N3-qkD"/>
+                            <constraint firstItem="iHw-2T-Tcv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="d6d-dz-lMr"/>
+                            <constraint firstItem="dvt-9g-mFs" firstAttribute="top" secondItem="rf3-ng-B8p" secondAttribute="bottom" constant="26" id="dih-JA-Rfi"/>
+                            <constraint firstItem="MVc-sJ-QWT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="duH-7q-WPC"/>
+                            <constraint firstItem="gPO-vP-MJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="hnO-Dm-Ve5"/>
+                            <constraint firstItem="Sb8-mE-og1" firstAttribute="leading" secondItem="iHw-2T-Tcv" secondAttribute="trailing" constant="7.5" id="phg-64-4Hr"/>
+                            <constraint firstItem="iHw-2T-Tcv" firstAttribute="centerY" secondItem="gAQ-Hh-QI9" secondAttribute="centerY" id="rvg-jL-ZBi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gPO-vP-MJq" secondAttribute="bottom" constant="172" id="wbq-pB-j4m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jCz-td-ZMT" secondAttribute="trailing" constant="98" id="weM-X6-s05"/>
+                            <constraint firstItem="q8x-Z0-qBI" firstAttribute="trailing" secondItem="Sb8-mE-og1" secondAttribute="trailing" id="xHq-6T-uAO"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="Sb8-mE-og1" id="9qK-S8-Jbm"/>
+                        <outlet property="passwordTextField" destination="KBw-Ac-2cY" id="zwv-t2-84S"/>
+                        <segue destination="4a5-Wx-a0X" kind="show" identifier="tabController" id="sQr-dL-nr7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-73" y="154"/>
+        </scene>
+        <!--MinersVC-->
+        <scene sceneID="aQQ-JH-YDT">
+            <objects>
+                <viewController id="Dgq-at-yyd" customClass="Miners_VC" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mfb-sq-6BE">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miner_Small Icon" translatesAutoresizingMaskIntoConstraints="NO" id="9sM-to-sda">
+                                <rect key="frame" x="16" y="44" width="112" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIH-J1-B8M">
+                                <rect key="frame" x="16" y="135" width="89" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xdq-Uo-8J5">
+                                <rect key="frame" x="16" y="183" width="350" height="546"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BQ-da-bxR">
+                                        <rect key="frame" x="169" y="0.0" width="173" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Green Rounded Button Icon"/>
+                                        <connections>
+                                            <action selector="addNewPool:" destination="Dgq-at-yyd" eventType="touchUpInside" id="Vyy-Oo-Wd9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add New Pool" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKd-QU-SpI">
+                                        <rect key="frame" x="200" y="18" width="111" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HMB-so-KgU">
+                                        <rect key="frame" x="8" y="63" width="334" height="155"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.14009499550000001" green="0.15239626170000001" blue="0.20801699160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sHa-ai-ZII" customClass="PoolCellTableViewCell" customModule="Miner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="334" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sHa-ai-ZII" id="a8w-X7-BNJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <sections/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Dgq-at-yyd" id="JTm-Tc-41M"/>
+                                            <outlet property="delegate" destination="Dgq-at-yyd" id="Hg1-xU-rCy"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Miners" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7K-X5-Ope">
+                                        <rect key="frame" x="8" y="236" width="82" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Underline" translatesAutoresizingMaskIntoConstraints="NO" id="UEj-xb-Vox">
+                                        <rect key="frame" x="8" y="262" width="45" height="7"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="prominent" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="jca-uh-tnX">
+                                        <rect key="frame" x="167" y="236" width="175" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Owk-lI-69y" customClass="BorderedButton" customModule="Miner" customModuleProvider="target">
+                                        <rect key="frame" x="226" y="288" width="116" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Sort By"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sortBy:" destination="Dgq-at-yyd" eventType="touchUpInside" id="hCg-xl-aCu"/>
+                                        </connections>
+                                    </button>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NTQ-NR-b1x">
+                                        <rect key="frame" x="8" y="336" width="334" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="5VM-fS-kBj" customClass="MinerTableViewCell" customModule="Miner" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="334" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5VM-fS-kBj" id="j7U-es-r7F">
+                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Dgq-at-yyd" id="e7i-GM-GnE"/>
+                                            <outlet property="delegate" destination="Dgq-at-yyd" id="rmr-kw-N1o"/>
+                                        </connections>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVN-f4-oMc" customClass="BorderedButton" customModule="Miner" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="288" width="123" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Miner Type"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="sortByMinerType:" destination="Dgq-at-yyd" eventType="touchUpInside" id="fa8-5Q-5l2"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="contentLayoutGuide" id="TR6-ZQ-bvU"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="5cn-PB-KSr"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwS-gy-mWW">
+                                <rect key="frame" x="26" y="193" width="43" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Underline" translatesAutoresizingMaskIntoConstraints="NO" id="YvK-X9-3KJ">
+                                <rect key="frame" x="26" y="219" width="45" height="7"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ljT-k4-X1V"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Miner Icon" id="rP7-2H-cxX"/>
+                    <connections>
+                        <outlet property="minerTableView" destination="NTQ-NR-b1x" id="BkD-qa-rBQ"/>
+                        <outlet property="poolTableView" destination="HMB-so-KgU" id="pHV-Ls-1oi"/>
+                        <outlet property="scrollView" destination="xdq-Uo-8J5" id="I9T-dT-zoo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qId-tG-F5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2295" y="-150"/>
+        </scene>
+        <!--DashboardVC-->
+        <scene sceneID="WND-Vr-anH">
+            <objects>
+                <viewController id="DNJ-qT-uKM" customClass="Dashboard_VC" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kpC-2T-h88">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miner_Small Icon" translatesAutoresizingMaskIntoConstraints="NO" id="wYM-pJ-Thx">
+                                <rect key="frame" x="16" y="44" width="112" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-TG-T22" customClass="RoundedView" customModule="Miner" customModuleProvider="target">
+                                <rect key="frame" x="16" y="284" width="343" height="437"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRO-uO-GKi">
+                                        <rect key="frame" x="8" y="8" width="88" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hashrate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLe-dc-kOU">
+                                        <rect key="frame" x="40" y="55" width="71" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Underline" translatesAutoresizingMaskIntoConstraints="NO" id="19y-vU-hgC">
+                                        <rect key="frame" x="8" y="34" width="45" height="7"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RGD-Y2-LT8" customClass="HIChartView">
+                                        <rect key="frame" x="8" y="102" width="327" height="327"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Green Dot" translatesAutoresizingMaskIntoConstraints="NO" id="TnJ-1t-5J9">
+                                        <rect key="frame" x="0.0" y="57" width="41" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Blue Dot" translatesAutoresizingMaskIntoConstraints="NO" id="qVO-Zh-Q2C">
+                                        <rect key="frame" x="130" y="57" width="41" height="20"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electricity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYv-Ft-ZAy">
+                                        <rect key="frame" x="172" y="55" width="76" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lh8-SF-ds0" customClass="RoundedView" customModule="Miner" customModuleProvider="target">
+                                <rect key="frame" x="16" y="192" width="103" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Hash Rate Green" translatesAutoresizingMaskIntoConstraints="NO" id="dLy-Cf-gkQ">
+                                        <rect key="frame" x="8" y="8" width="27" height="7"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hash Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEc-po-rjk">
+                                        <rect key="frame" x="8" y="15" width="38" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="8"/>
+                                        <color key="textColor" red="0.4796504378" green="0.97466665509999995" blue="0.78658896680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5b1-dv-ciG">
+                                        <rect key="frame" x="8" y="35" width="87" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ph/s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bks-tM-BR1">
+                                        <rect key="frame" x="8" y="55" width="27" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHc-2X-HI6" customClass="RoundedView" customModule="Miner" customModuleProvider="target">
+                                <rect key="frame" x="256" y="192" width="103" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Online Green" translatesAutoresizingMaskIntoConstraints="NO" id="3HF-a1-5VH">
+                                        <rect key="frame" x="8" y="8" width="27" height="7"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wcy-s7-w57">
+                                        <rect key="frame" x="8" y="15" width="26" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="8"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uvs-jW-wpK">
+                                        <rect key="frame" x="8" y="35" width="87" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Machines" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dQc-eZ-CZ0">
+                                        <rect key="frame" x="8" y="56" width="45" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9R-wr-JZn">
+                                <rect key="frame" x="21" y="135" width="143" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUf-CK-Nob" customClass="RoundedView" customModule="Miner" customModuleProvider="target">
+                                <rect key="frame" x="136" y="192" width="103" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Electricy Blue" translatesAutoresizingMaskIntoConstraints="NO" id="xJA-EC-EOV">
+                                        <rect key="frame" x="8" y="8" width="27" height="7"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Electricity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7K-Nz-4gd">
+                                        <rect key="frame" x="8" y="15" width="36" height="12"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="8"/>
+                                        <color key="textColor" red="0.4359422624" green="0.82536214590000001" blue="0.97488766910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Zr-AO-821">
+                                        <rect key="frame" x="8" y="56" width="27" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="10"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVI-1e-vfl">
+                                        <rect key="frame" x="8" y="35" width="87" height="22"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZEY-oB-YeG"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Home Icon" id="ChV-hJ-KeR"/>
+                    <connections>
+                        <outlet property="chartView" destination="RGD-Y2-LT8" id="zfE-CK-CNF"/>
+                        <outlet property="electricityRate" destination="DVI-1e-vfl" id="1tR-jZ-lXC"/>
+                        <outlet property="hashRate" destination="5b1-dv-ciG" id="YoZ-P0-Aul"/>
+                        <outlet property="machinesOnline" destination="Uvs-jW-wpK" id="8eb-cF-wlj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8b-gE-6vX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2212" y="-826"/>
+        </scene>
+        <!--InvoicesVC-->
+        <scene sceneID="i2w-Dq-R7F">
+            <objects>
+                <viewController id="ouD-v3-IJy" customClass="Invoices_VC" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cEs-bb-uMg">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miner_Small Icon" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-nS-s9N">
+                                <rect key="frame" x="16" y="44" width="112" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invoices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thI-li-hsQ">
+                                <rect key="frame" x="16" y="135" width="116" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M5U-d7-M2a">
+                                <rect key="frame" x="16" y="193" width="343" height="522"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Billing Cycle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D6B-lZ-VGS">
+                                        <rect key="frame" x="8" y="8" width="106" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Electricy Blue" translatesAutoresizingMaskIntoConstraints="NO" id="3hx-Qv-hb3">
+                                        <rect key="frame" x="0.0" y="37" width="50" height="4"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.01" minValue="0.0" maxValue="1000" translatesAutoresizingMaskIntoConstraints="NO" id="ybM-df-tie">
+                                        <rect key="frame" x="8" y="76" width="337" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsT-Ir-ydh">
+                                        <rect key="frame" x="4" y="56" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4U-Pf-mKh">
+                                        <rect key="frame" x="0.0" y="113" width="61" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="24"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consumption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQ1-8M-Vj3">
+                                        <rect key="frame" x="0.0" y="144" width="107" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" red="0.4796504378" green="0.97466665509999995" blue="0.78658896680000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projected Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhO-fW-2j6">
+                                        <rect key="frame" x="0.0" y="252" width="158" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="23"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afA-fi-Mtd">
+                                        <rect key="frame" x="0.0" y="283" width="81" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="32"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quc-Ex-HKX">
+                                        <rect key="frame" x="4" y="329" width="331" height="193"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invoice number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6g6-6P-kAc">
+                                                <rect key="frame" x="8" y="8" width="123" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXO-16-SDW">
+                                                <rect key="frame" x="8" y="64" width="64" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Invoice:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrK-99-e9G">
+                                                <rect key="frame" x="168" y="115" width="60" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxg-Kq-Kpg">
+                                                <rect key="frame" x="10" y="32" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zr5-yz-bjz">
+                                                <rect key="frame" x="169" y="32" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bL-Iy-fJt">
+                                                <rect key="frame" x="8" y="83" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Due Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR4-5D-mrn">
+                                                <rect key="frame" x="8" y="115" width="74" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Month" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEU-Sc-eLC">
+                                                <rect key="frame" x="169" y="8" width="53" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="kWh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1GI-gg-Cfe">
+                                                <rect key="frame" x="171" y="64" width="35" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hda-YL-xKX">
+                                                <rect key="frame" x="171" y="83" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbx-OH-Gbg">
+                                                <rect key="frame" x="236" y="115" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-T6-Chf">
+                                                <rect key="frame" x="8" y="134" width="39" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZ5-JK-fzI">
+                                                <rect key="frame" x="151" y="134" width="124" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="View" image="Green Rounded Button Icon">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xc-ii-wJJ">
+                                                <rect key="frame" x="194" y="151" width="38" height="24"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.14009499550000001" green="0.15239626170000001" blue="0.20801699160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7C-oO-lSd">
+                                        <rect key="frame" x="2" y="182" width="61" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="24"/>
+                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Current Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EXc-2K-V4g">
+                                        <rect key="frame" x="2" y="212" width="102" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="17"/>
+                                        <color key="textColor" red="0.4359422624" green="0.82536214590000001" blue="0.97488766910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.02429671140061207" green="0.02429671140061207" blue="0.02429671140061207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hxJ-Z5-Yut"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Invoice Icon" id="fza-Iv-gGK"/>
+                    <connections>
+                        <outlet property="amountLabel" destination="4bL-Iy-fJt" id="lAw-Vg-HiT"/>
+                        <outlet property="consumptionLabel" destination="M4U-Pf-mKh" id="ygA-md-05X"/>
+                        <outlet property="costSlider" destination="ybM-df-tie" id="bRl-zM-C90"/>
+                        <outlet property="currentTotalLabel" destination="E7C-oO-lSd" id="v37-qx-p4I"/>
+                        <outlet property="dueDateLabel" destination="Qct-T6-Chf" id="5sS-PA-8cQ"/>
+                        <outlet property="energyLabel" destination="Hda-YL-xKX" id="frG-l9-PYb"/>
+                        <outlet property="invoiceLabel" destination="bbx-OH-Gbg" id="9s3-eJ-kG9"/>
+                        <outlet property="invoiceNumberLabel" destination="qxg-Kq-Kpg" id="Ul7-yp-cJv"/>
+                        <outlet property="monthLabel" destination="Zr5-yz-bjz" id="Shb-0l-FD7"/>
+                        <outlet property="sliderLabel" destination="QsT-Ir-ydh" id="hZD-vj-MK6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwy-1U-KLI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="517"/>
+        </scene>
+        <!--Rounded Tab Bar Controller-->
+        <scene sceneID="4mh-js-c8l">
+            <objects>
+                <tabBarController storyboardIdentifier="tabController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4a5-Wx-a0X" customClass="RoundedTabBarController" customModule="Miner" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="W9x-UV-Q2N"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="6mW-xK-woF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DNJ-qT-uKM" kind="relationship" relationship="viewControllers" id="943-yw-pfG"/>
+                        <segue destination="Dgq-at-yyd" kind="relationship" relationship="viewControllers" id="FKL-ye-LPf"/>
+                        <segue destination="ouD-v3-IJy" kind="relationship" relationship="viewControllers" id="rI0-mR-yqx"/>
+                        <segue destination="pdL-8c-Qjn" kind="relationship" relationship="viewControllers" id="4UC-8J-pMD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RSO-Ry-vxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="154"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="rhx-iT-zVX">
+            <objects>
+                <viewController id="pdL-8c-Qjn" customClass="Settings_VC" customModule="Miner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nf4-hX-ML2">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Key Icon" translatesAutoresizingMaskIntoConstraints="NO" id="4AE-fF-540">
+                                <rect key="frame" x="47" y="312" width="30.333333333333329" height="31.333333333333314"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4AE-fF-540" secondAttribute="height" multiplier="32:33" id="y6L-Oh-mTL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="SignIn TextView Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Mus-cB-ieK">
+                                <rect key="frame" x="32" y="224" width="310" height="53"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Mus-cB-ieK" secondAttribute="height" multiplier="310:53" id="3a2-o5-mMh"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New password" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tne-Ta-Tn8">
+                                <rect key="frame" x="85" y="311" width="201" height="33.333333333333314"/>
+                                <color key="backgroundColor" red="0.14009499550000001" green="0.15239626170000001" blue="0.20801699160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Password TexView Icon" translatesAutoresizingMaskIntoConstraints="NO" id="Uc9-iR-l3S">
+                                <rect key="frame" x="32" y="293" width="310" height="70"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uc9-iR-l3S" secondAttribute="height" multiplier="31:7" id="Ozy-r4-1ba"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your email" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jbc-B0-KCu">
+                                <rect key="frame" x="85" y="228" width="240" height="43.333333333333314"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="eyeball Icon" translatesAutoresizingMaskIntoConstraints="NO" id="n1G-jp-GdM">
+                                <rect key="frame" x="296" y="313" width="29.333333333333314" height="30.333333333333314"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="n1G-jp-GdM" secondAttribute="height" multiplier="32:33" id="OVg-bZ-R2u"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBP-gH-AiH">
+                                <rect key="frame" x="76" y="352" width="222" height="101"/>
+                                <state key="normal" image="Large Green Rounded Button Icon"/>
+                                <connections>
+                                    <action selector="changePassword:" destination="pdL-8c-Qjn" eventType="touchUpInside" id="cPb-re-TEv"/>
+                                    <action selector="performSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GlG-iN-4fr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Man Icon" translatesAutoresizingMaskIntoConstraints="NO" id="5Ga-bf-eyC">
+                                <rect key="frame" x="47" y="235" width="30.333333333333329" height="31"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5Ga-bf-eyC" secondAttribute="height" multiplier="26:25" constant="-1.8399999999999999" id="o5D-jN-xxO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Save Change" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9P-Lc-Jz4">
+                                <rect key="frame" x="127" y="389" width="116" height="27"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Update your profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cna-JI-asR">
+                                <rect key="frame" x="32" y="144" width="269" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SoleilW01-Regular" family="SoleilW01-Regular" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Miner_Small Icon" translatesAutoresizingMaskIntoConstraints="NO" id="jIQ-oE-MlZ">
+                                <rect key="frame" x="32" y="44" width="112" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Key Icon" translatesAutoresizingMaskIntoConstraints="NO" id="yFe-kq-Opt">
+                                <rect key="frame" x="47" y="313" width="30.333333333333329" height="31.333333333333314"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="yFe-kq-Opt" secondAttribute="height" multiplier="32:33" id="dVR-2F-N9C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fux-Pe-OYo"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bBP-gH-AiH" firstAttribute="centerY" secondItem="y9P-Lc-Jz4" secondAttribute="centerY" id="1vf-qP-Xb8"/>
+                            <constraint firstItem="5Ga-bf-eyC" firstAttribute="centerY" secondItem="Mus-cB-ieK" secondAttribute="centerY" id="4Rz-ui-3Qq"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="width" secondItem="4AE-fF-540" secondAttribute="height" multiplier="32:33" id="4cd-Wq-b8d"/>
+                            <constraint firstItem="Uc9-iR-l3S" firstAttribute="top" secondItem="5Ga-bf-eyC" secondAttribute="bottom" constant="27" id="88e-qq-dT5"/>
+                            <constraint firstItem="n1G-jp-GdM" firstAttribute="width" secondItem="n1G-jp-GdM" secondAttribute="height" multiplier="32:33" id="CmT-7o-2vZ"/>
+                            <constraint firstItem="y9P-Lc-Jz4" firstAttribute="top" secondItem="Uc9-iR-l3S" secondAttribute="bottom" constant="26" id="Ffh-OY-YGg"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="centerY" secondItem="tne-Ta-Tn8" secondAttribute="centerY" id="JRd-d7-IQG"/>
+                            <constraint firstItem="Jbc-B0-KCu" firstAttribute="leading" secondItem="5Ga-bf-eyC" secondAttribute="trailing" constant="7.5" id="L6R-Rc-XTK"/>
+                            <constraint firstItem="Uc9-iR-l3S" firstAttribute="top" secondItem="Jbc-B0-KCu" secondAttribute="bottom" constant="21" id="MXE-We-T4s"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="leading" secondItem="5Ga-bf-eyC" secondAttribute="leading" id="P49-B6-2dP"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="bottom" secondItem="tne-Ta-Tn8" secondAttribute="bottom" constant="-1" id="PzC-6r-MnR"/>
+                            <constraint firstItem="yFe-kq-Opt" firstAttribute="width" secondItem="yFe-kq-Opt" secondAttribute="height" multiplier="32:33" id="UDZ-LZ-YRb"/>
+                            <constraint firstItem="tne-Ta-Tn8" firstAttribute="leading" secondItem="Jbc-B0-KCu" secondAttribute="leading" id="Wuq-Qm-ZEU"/>
+                            <constraint firstItem="Uc9-iR-l3S" firstAttribute="width" secondItem="Uc9-iR-l3S" secondAttribute="height" multiplier="31:7" id="XVJ-hJ-k5r"/>
+                            <constraint firstItem="Uc9-iR-l3S" firstAttribute="top" secondItem="Mus-cB-ieK" secondAttribute="bottom" constant="16" id="YAs-tE-xo0"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="centerY" secondItem="Uc9-iR-l3S" secondAttribute="centerY" id="aKh-pe-yQz"/>
+                            <constraint firstItem="Uc9-iR-l3S" firstAttribute="top" secondItem="Mus-cB-ieK" secondAttribute="bottom" constant="16" id="aMm-gp-02N"/>
+                            <constraint firstItem="tne-Ta-Tn8" firstAttribute="top" secondItem="n1G-jp-GdM" secondAttribute="top" constant="-1.5" id="b00-eV-nlr"/>
+                            <constraint firstItem="bBP-gH-AiH" firstAttribute="top" secondItem="tne-Ta-Tn8" secondAttribute="bottom" constant="7.3333333333333144" id="cxu-rq-beE"/>
+                            <constraint firstItem="n1G-jp-GdM" firstAttribute="trailing" secondItem="Jbc-B0-KCu" secondAttribute="trailing" id="iBe-CM-PLT"/>
+                            <constraint firstItem="4AE-fF-540" firstAttribute="centerX" secondItem="5Ga-bf-eyC" secondAttribute="centerX" id="m8G-YX-XtM"/>
+                            <constraint firstItem="n1G-jp-GdM" firstAttribute="width" secondItem="n1G-jp-GdM" secondAttribute="height" multiplier="32:33" id="oM6-69-5Ik"/>
+                            <constraint firstItem="y9P-Lc-Jz4" firstAttribute="centerX" secondItem="Uc9-iR-l3S" secondAttribute="centerX" constant="-2" id="qZi-Bl-wNU"/>
+                            <constraint firstItem="n1G-jp-GdM" firstAttribute="leading" secondItem="tne-Ta-Tn8" secondAttribute="trailing" constant="9.5" id="ruv-wv-hhE"/>
+                            <constraint firstItem="tne-Ta-Tn8" firstAttribute="centerY" secondItem="n1G-jp-GdM" secondAttribute="centerY" id="w3B-aH-09a"/>
+                            <constraint firstItem="Mus-cB-ieK" firstAttribute="width" secondItem="Mus-cB-ieK" secondAttribute="height" multiplier="310:53" id="zeP-dk-2r5"/>
+                            <constraint firstItem="5Ga-bf-eyC" firstAttribute="width" secondItem="5Ga-bf-eyC" secondAttribute="height" multiplier="26:25" constant="-1.8399999999999999" id="zrG-5T-arh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Settings Icon" id="Dfr-pU-Doj"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="Jbc-B0-KCu" id="7Hk-Gz-tpL"/>
+                        <outlet property="passwordTextField" destination="tne-Ta-Tn8" id="mGT-1f-FQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zg4-54-EZX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="1202.9556650246307"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Owk-lI-69y">
+            <size key="intrinsicContentSize" width="51" height="30"/>
+        </designable>
+        <designable name="oVN-f4-oMc">
+            <size key="intrinsicContentSize" width="77" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Blue Dot" width="16" height="16"/>
+        <image name="Electricy Blue" width="38" height="5"/>
+        <image name="Green Dot" width="16" height="16"/>
+        <image name="Green Rounded Button Icon" width="249.33332824707031" height="116"/>
+        <image name="Green Underline" width="38" height="3"/>
+        <image name="Hash Rate Green" width="38" height="5"/>
+        <image name="Home Icon" width="32.333332061767578" height="32.333332061767578"/>
+        <image name="Invoice Icon" width="24.333333969116211" height="32.333332061767578"/>
+        <image name="Key Icon" width="39.666667938232422" height="22.333333969116211"/>
+        <image name="Large Green Rounded Button Icon" width="240" height="125.66666412353516"/>
+        <image name="Man Icon" width="30.333333969116211" height="30.666666030883789"/>
+        <image name="Miner Icon" width="32.333332061767578" height="32.333332061767578"/>
+        <image name="Miner_Faded Icon" width="382.66665649414062" height="370.66665649414062"/>
+        <image name="Miner_Small Icon" width="148" height="85.333335876464844"/>
+        <image name="Online Green" width="38" height="5"/>
+        <image name="Password TexView Icon" width="413.33334350585938" height="70.666664123535156"/>
+        <image name="Settings Icon" width="33" height="32.333332061767578"/>
+        <image name="SignIn TextView Icon" width="413.33334350585938" height="70.666664123535156"/>
+        <image name="eyeball Icon" width="33.666667938232422" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
