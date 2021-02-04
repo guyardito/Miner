@@ -33,6 +33,7 @@
 		93D626202564862D00596AE4 /* ChartOptionsServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6261F2564862D00596AE4 /* ChartOptionsServer.swift */; };
 		93EEF24424BCB76D005519F8 /* RoundedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EEF24324BCB76D005519F8 /* RoundedTabBarController.swift */; };
 		E43CE954259BF65F00E29960 /* test_data.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43CE953259BF65F00E29960 /* test_data.swift */; };
+		E4663BDE25CB9D36001EE569 /* Highcharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4663BDD25CB9D36001EE569 /* Highcharts.framework */; };
 		E4878EF9258D3DD100C6A7DD /* Highcharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D626212565618000596AE4 /* Highcharts.framework */; };
 		E4878EFA258D3DD100C6A7DD /* Highcharts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 93D626212565618000596AE4 /* Highcharts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		93D626212565618000596AE4 /* Highcharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highcharts.framework; sourceTree = "<group>"; };
 		93EEF24324BCB76D005519F8 /* RoundedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTabBarController.swift; sourceTree = "<group>"; };
 		E43CE953259BF65F00E29960 /* test_data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_data.swift; sourceTree = "<group>"; };
+		E4663BDD25CB9D36001EE569 /* Highcharts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Highcharts.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4663BDE25CB9D36001EE569 /* Highcharts.framework in Frameworks */,
 				93130107256429CE003A624A /* SwiftKeychainWrapper in Frameworks */,
 				E4878EF9258D3DD100C6A7DD /* Highcharts.framework in Frameworks */,
 			);
@@ -98,6 +101,7 @@
 		93515B6824B667470058402F = {
 			isa = PBXGroup;
 			children = (
+				E4663BDD25CB9D36001EE569 /* Highcharts.framework */,
 				937A2C2D2534D6A4008F83C2 /* Network */,
 				9395404224B7AC390071D361 /* Fonts */,
 				E43CE955259C268A00E29960 /* Models */,
